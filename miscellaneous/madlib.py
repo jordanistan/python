@@ -1,4 +1,6 @@
 # Sting Concatenation ( aka how to put strings together)
+# https://www.w3schools.com/python/gloss_python_string_concatenation.asp
+
 title = "The Ultimate Battle"
 adjective = input("Enter an adjective( “beautiful,” “smooth,” or “heavy” ): ")
 describelook = input("Enter a verb( ugly, hot, or cute ): ")
