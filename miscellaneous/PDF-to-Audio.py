@@ -13,4 +13,4 @@ def PDFtoAudio(pdf_path):
         for page in pdf.pages:
             text.append(page.extractText())
     speak(' '.join(text), 'en', save=True, file='audio_book.mp3')
-PDFtoAudio('test.pdf')
+PDFtoAudio('demo.pdf')
