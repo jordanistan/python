@@ -65,6 +65,21 @@ If you want to know whether a particular application, or a library with particul
 # Frequently Asked Questions
 If you have a question, it's a good idea to try the FAQ, which answers the most commonly asked questions about Python.
 
+# Things to Learn in Python
+Learn the basics of Python, its history, installations, syntax and other basic constructs such as operators, variables, and statements.
+Understand the applications of Python and the difference between Python 2 and Python 3.
+Learn the important concepts such as loops and decision making.
+Understand the basic data structure such as dictionaries, sets, and lists.
+Learn how to develop a virtual environment.
+Get started with functions as well as recursion.
+Understand object-based concepts such as classes, methods, overloading, and inheritance.
+Gain experience with modules like calendar, namedruple, and OS.
+Know how to do file handling and understand other complex concepts such as generators, decorators, and shallow and deep copying.
+Get started with building GUIs with Python.
+Know how to generate and use random numbers as well as regular expressions.
+Understand more complicated topics such as XML processing, networking, and multiprocessing.
+Know how to use Pandas, NumPy, and SciPy.
+Know how to debug log, unit test, serialize and access the database.
 
 
 ## :sparkles: Features ##
