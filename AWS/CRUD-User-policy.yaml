@@ -1,0 +1,49 @@
+<!-- This policy allows the following actions:
+
+rds:CreateDBInstance, rds:DescribeDBInstances, rds:ModifyDBInstance, and rds:DeleteDBInstance: create, describe, modify, and delete RDS database instances.
+ec2:RunInstances, ec2:DescribeInstances, ec2:TerminateInstances, ec2:RebootInstances, ec2:StopInstances, and ec2:StartInstances: create, describe, terminate, reboot, stop, and start EC2 instances.
+lambda:CreateFunction, lambda:ListFunctions, lambda:UpdateFunctionCode, lambda:UpdateFunctionConfiguration, and lambda:DeleteFunction: create, list, update the code and configuration, and delete Lambda functions.
+The Resource property specifies the resources that these actions can be performed on. In this case, the * wildcard indicates that these actions can be performed on all RDS database instances, EC2 instances, and Lambda functions.
+
+To use this policy, you will need to create a new IAM policy and paste the above JSON into the policy document. You can then attach the policy to an IAM user, group, or role to grant the specified permissions.
+
+Here is an AWS Identity and Access Management (IAM) policy that grants create, read, update, and delete (CRUD) access to a database, EC2 instances, Lambda functions, and Amazon Relational Database Service (RDS) instances to a specific user: -->
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "rds:CreateDBInstance",
+        "rds:DescribeDBInstances",
+        "rds:ModifyDBInstance",
+        "rds:DeleteDBInstance"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:RunInstances",
+        "ec2:DescribeInstances",
+        "ec2:TerminateInstances",
+        "ec2:RebootInstances",
+        "ec2:StopInstances",
+        "ec2:StartInstances"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "lambda:CreateFunction",
+        "lambda:ListFunctions",
+        "lambda:UpdateFunctionCode",
+        "lambda:UpdateFunctionConfiguration",
+        "lambda:DeleteFunction"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
