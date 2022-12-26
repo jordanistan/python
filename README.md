@@ -3,10 +3,10 @@
 
   &#xa0;
 
-  <!-- <a href="https://python1.netlify.app">Demo</a> -->
+  <!-- <a href="https://python.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Python 1</h1>
+<h1 align="center">Python</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/jordanistan/python?color=56BEB8">
