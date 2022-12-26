@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dog Collars</title>
+    <style>
+      /* Add some styling for the store page */
+      .store {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .product {
+        width: 300px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 4px #ccc;
+      }
+
+      .product-image {
+        width: 100%;
+      }
+
+      .product-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px;
+      }
+
+      .product-price {
+        font-size: 14px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dog Collars</h1>
+    <p>Welcome to our store! We sell high-quality dog collars that are perfect for any furry friend. Our collars are made with durable materials and feature stylish designs that your dog will love. Here are a few reasons why you should choose our collars:</p>
+    <ul>
+      <li>They are made with durable materials to withstand rough play.</li>
+      <li>They are adjustable to ensure a perfect fit for your dog.</li>
+      <li>They feature stylish designs that your dog will love wearing.</li>
+      <li>They have reflective strips for added visibility and safety during walks at night.</li>
+      <li>They are easy to clean and maintain.</li>
+    </ul>
+    <div class="store">
+      <!-- Loop through the products and display them in the store -->
+      <div class="product" v-for="product in products">
+        <img class="product-image" :src="product.image_url" alt="">
+        <h2 class="product-title">{{ product.title }}</h2>
+        <p class="product-price">{{ product.price }}</p>
+      </div>
+    </div>
+    <!-- Load the Vue.js library and the script that loads the products from the database -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="/js/load-products.js"></script>
+  </body>
+</html>
