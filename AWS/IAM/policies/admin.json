@@ -1,0 +1,14 @@
+<!-- This policy grants the admin full access to all AWS resources and actions. This means that the admin will be able to perform any action on any resource within the AWS account.
+
+Please note that this is a very permissive policy, and it is generally recommended to provide more granular permissions to users and admins. For example, you may want to restrict the admin's access to certain resources or actions, or require MFA authentication for certain sensitive actions. It is important to carefully consider the permissions you grant to your admins to ensure the security and integrity of your AWS account. -->
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    }
+  ]
+}

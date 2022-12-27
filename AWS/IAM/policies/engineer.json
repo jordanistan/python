@@ -1,0 +1,27 @@
+<!-- This policy grants the engineer access to a variety of AWS services and actions that are commonly used for developing applications. It allows the engineer to create and manage EC2 instances, deploy and manage applications on Elastic Beanstalk, store and retrieve data on S3, monitor and log application performance with CloudWatch, scale applications with Auto Scaling, create and manage database instances with RDS, route traffic with Route 53, create and manage IAM roles and policies, and create and manage Lambda functions.
+
+Please note that this policy is just a starting point, and you may need to modify it to fit your specific requirements. For example, you may want to restrict the engineer's access to certain resources or actions, or require MFA authentication for certain sensitive actions. It is important to carefully consider the permissions you grant to your engineers to ensure the security and integrity of your AWS account. -->
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:*",
+        "elasticbeanstalk:*",
+        "s3:*",
+        "cloudwatch:*",
+        "autoscaling:*",
+        "rds:*",
+        "route53:*",
+        "iam:CreateRole",
+        "iam:CreatePolicy",
+        "iam:PutRolePolicy",
+        "iam:AttachRolePolicy",
+        "lambda:*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

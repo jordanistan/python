@@ -1,0 +1,21 @@
+<!-- This policy allows the user to perform any action on any resource, as long as the resource has a policy attached to it that grants read-only access. This allows you to grant read-only access to all resources in your account, while still maintaining the ability to grant more permissive permissions to specific resources as needed.
+
+Please note that this policy is just a starting point, and you may need to modify it to fit your specific requirements. For example, you may want to restrict the user's access to certain resources or actions, or require MFA authentication for certain sensitive actions. It is important to carefully consider the permissions you grant to your users to ensure the security and integrity of your AWS account. -->
+
+{
+  "Version": "2012-10-17",
+  " Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "*"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringLike": {
+          "aws:ResourcePolicy": "arn:aws:iam::*:policy/ReadOnlyAccess"
+        }
+      }
+    }
+  ]
+}
