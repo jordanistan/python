@@ -2,9 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import sys
 
-# Get the item and price from the command line arguments
-item = sys.argv[1]
-price = int(sys.argv[2])
+# # Get the item and price from the command line arguments
+# item = sys.argv[1]
+# price = int(sys.argv[2])
 
 # Function to search Craigslist for a specific item under a specific price
 def search_items(item, price):
