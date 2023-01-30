@@ -1,0 +1,154 @@
+In computer programming, data types are used to define the type of values that can be stored in a variable. Python supports several data types, including integers, strings, booleans, and floats. Let's take a closer look at each of these data types and see how they are used in Python.
+
+Integers
+
+Integers are whole numbers, such as 1, 2, or 3. In Python, integers are declared by assigning a whole number to a variable. For example:
+
+## Integers
+
+```python
+x = 10
+print(x)
+
+```
+The output of this code will be:
+```python
+10
+
+```
+Integers can be used in mathematical operations, such as addition, subtraction, multiplication, and division. For example:
+
+```python
+a = 10
+b = 20
+c = a + b
+print(c)
+
+```
+
+The output of this code will be:
+
+```python
+30
+
+```
+
+
+## Strings
+Strings are sequences of characters, such as "Hello" or "World". In Python, strings are declared by enclosing characters in quotation marks. For example:
+
+```python
+name = "John"
+print(name)
+
+```
+The output of this code will be:
+```python
+John
+
+```
+Strings can be concatenated (joined together) using the "+" operator. For example:
+```python
+first_name = "John"
+last_name = "Doe"
+full_name = first_name + " " + last_name
+print(full_name)
+
+```
+The output of this code will be:
+```python
+John Doe
+
+```
+
+## Booleans
+
+Booleans are data types that can have only two values: True or False. In Python, booleans are used to represent the truth value of a statement. For example:
+
+
+
+```python
+is_active = True
+print(is_active)
+
+```
+The output of this code will be:
+```python
+True
+
+```
+
+Booleans are often used in conditional statements, such as if statements, to control the flow of a program.
+
+## Floats
+
+Floats are numbers with a decimal point, such as 3.14 or 1.23. In Python, floats are declared by assigning a number with a decimal point to a variable. For example:
+
+```python
+pi = 3.14
+print(pi)
+
+```
+The output of this code will be:
+
+```python
+3.14
+
+```
+Floats can be used in mathematical operations, just like integers. For example:
+
+
+
+```python
+a = 3.14
+b = 2.7
+c = a + b
+print(c)
+
+```
+The output of this code will be:
+```python
+5.84
+
+```
+
+
+
+## Conclusion
+
+```python
+In Python, there are several data types that can be used to store different types of values. Understanding the different data types and how they are used is an important part of becoming a proficient Python programmer. Whether you are working with integers, strings, booleans, or floats, Python makes it easy to declare and manipulate variables with these data types.
+```
+
+
+
+## 
+
+```python
+
+```
+
+
+
+## 
+
+```python
+
+```
+
+
+
+## 
+
+```python
+
+```
+
+
+
+## 
+
+```python
+
+```
+

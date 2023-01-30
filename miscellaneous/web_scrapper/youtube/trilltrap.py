@@ -15,6 +15,6 @@ def download_video(url, path):
         ydl.download([url])
 
 if __name__ == "__main__":
-    url = "https://www.youtube.com/watch?v=QtOp2qENATU"
+    url = "https://www.youtube.com/watch?v=36c9ZweCKFE"
     path = "/Users/jordan/projects/python-1/miscellaneous/web_scrapper/youtube/tracks"
     download_video(url, path)

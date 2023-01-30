@@ -1,0 +1,156 @@
+Hey there! It's Raphael, one of the Teenage Mutant Ninja Turtles, and I'm here to help you pass your Python coding interview!
+
+As a turtle who loves to code, I know that coding interviews can be a little intimidating, but with some practice and the right approach, you'll be able to breeze through them with ease. Here are five common Python coding questions and how to solve them:
+
+Reverse a string: Write a function to reverse a string in Python.
+ruby
+
+```python
+def reverse_string(string):
+  return string[::-1]
+```
+To solve this, we can use slicing to reverse the string. By slicing the string with the step of -1, we start from the end of the string and work our way backwards to the beginning, effectively reversing the string.
+
+Find the maximum number in a list: Write a function to find the maximum number in a list of integers.
+python
+
+```python
+def find_max(numbers):
+  return max(numbers)
+```
+
+To solve this, we can use the built-in max function in Python, which returns the maximum value in a list of numbers.
+
+FizzBuzz: Write a function that prints the numbers from 1 to 100, but for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers that are multiples of both 3 and 5, print "FizzBuzz".
+python
+
+```python
+def fizzbuzz():
+  for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+      print("FizzBuzz")
+    elif i % 3 == 0:
+      print("Fizz")
+    elif i % 5 == 0:
+      print("Buzz")
+    else:
+      print(i)
+```
+
+To solve this, we use a for loop to iterate through the numbers from 1 to 100. Then, we use if statements to check if the number is a multiple of 3, 5, or both. If it is, we print the corresponding string. If it's not, we simply print the number.
+
+Palindrome: Write a function to check if a string is a palindrome (a word or phrase that reads the same backward as forward).
+c
+
+```python
+def is_palindrome(string):
+  return string == string[::-1]
+```
+
+To solve this, we simply compare the original string to its reverse. If they're the same, the string is a palindrome.
+
+Fibonacci sequence: Write a function to generate the first n numbers of the Fibonacci sequence.
+less
+
+```python
+def fibonacci(n):
+  a, b = 0, 1
+  result = []
+  for i in range(n):
+    result.append(a)
+    a, b = b, a + b
+  return result
+```
+
+To solve this, we start by defining the first two numbers in the sequence (0 and 1). Then, in a for loop, we generate the next numbers in the sequence by adding the previous two numbers together. We append each number to a list as we go along, and finally, return the list of numbers when the loop is finished.
+
+That's it! With these five solutions under your belt, you're well on your way to acing your Python coding interview. Just remember to stay calm and confident, and don't be afraid to ask clarifying questions if you're not sure what the interviewer is asking. Good luck!
+
+## Yo dudes and dudettes! It's Michelangelo, and I'm back with five more Python coding interview questions to help you crush that interview!
+
+Longest Common Prefix: Write a function to find the longest common prefix among a list of strings.
+swift
+
+```python
+def longest_common_prefix(strings):
+  if not strings:
+    return ""
+  prefix = strings[0]
+  for string in strings[1:]:
+    while string.find(prefix) != 0:
+      prefix = prefix[:-1]
+      if not prefix:
+        return ""
+  return prefix
+```
+
+To solve this, we first check if the list of strings is empty. If it is, we return an empty string. Otherwise, we start by setting the first string in the list as our prefix. Then, for each subsequent string, we use a while loop to continuously remove the last character of the prefix until it is a prefix of the current string. If the prefix becomes empty, we return an empty string.
+
+Factorial: Write a function to compute the factorial of a given integer.
+python
+
+```python
+def factorial(n):
+  if n < 0:
+    raise ValueError("Input must be non-negative.")
+  result = 1
+  for i in range(2, n + 1):
+    result *= i
+  return result
+```
+
+To solve this, we first check if the input is negative. If it is, we raise a ValueError indicating that the input must be non-negative. Otherwise, we use a for loop to multiply the result by each integer from 2 to n, effectively computing the factorial.
+
+Caesar Cipher: Write a function to encode a message using the Caesar cipher, a simple substitution cipher where each letter is shifted a certain number of places down the alphabet.
+cpp
+
+```python
+def caesar_cipher(message, shift):
+  result = ""
+  for char in message:
+    if char.isalpha():
+      shift_char = chr((ord(char) - ord("a") + shift) % 26 + ord("a"))
+      result += shift_char
+    else:
+      result += char
+  return result
+```
+
+To solve this, we use a for loop to iterate through each character in the message. If the character is a letter, we use the ord function to convert it to its corresponding ASCII code, shift it by the desired number of places, and then use the chr function to convert it back to a character. If the character is not a letter, we simply add it to the result unchanged.
+
+Longest Substring Without Repeating Characters: Write a function to find the length of the longest substring without repeating characters in a given string.
+sql
+
+```python
+def longest_substring(s):
+  chars = set()
+  start, end, max_length = 0, 0, 0
+  while end < len(s):
+    if s[end] not in chars:
+      chars.add(s[end])
+      end += 1
+      max_length = max(max_length, end - start)
+    else:
+      chars.remove(s[start])
+      start += 1
+  return max_length
+  ```
+
+  To solve this, we use two pointers (start and end) to keep track of the current substring and a set to store the characters in the current substring. In a while loop, we move the end pointer forward as long as the character at end is not already in the set. Each time we encounter a repeating character, we move the start pointer forward and remove the corresponding character from the set until the repeating character is no longer in the set. Throughout the loop, we keep track of the maximum length of a substring without repeating characters by taking the maximum of the current length (end - start) and the current maximum length.
+
+Two Sum: Write a function to find two numbers in a list that add up to a target number.
+python
+
+```python
+def two_sum(numbers, target):
+  for i, num1 in enumerate(numbers):
+    if target - num in num_dict:
+        return [num_dict[target - num], i]
+        num_dict[num] = i
+        return None
+```
+
+To solve this, we create a dictionary to store each number in the list as a key and its index as a value. Then, for each number in the list, we check if its complement (target - num) is in the dictionary. If it is, we return a list containing the index of the complement and the current index. If we finish looping through the list without finding a solution, we return None.
+
+And there you have it, dude! Five more Python coding interview questions to help you show off your skills. Don't forget to keep practicing and stay confident! Cowabunga!
+
